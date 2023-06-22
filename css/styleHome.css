@@ -1,0 +1,61 @@
+/* TOP SHELF AREA */
+
+.topBooks {
+	display: flex;
+	justify-content: center;
+}
+.topBooks img {
+	flex: auto;
+	justify-content: space-between;
+	margin: 0 5%;
+	width: 23%; /*23 = space other than margin, divided into 3*/
+}
+
+
+/* SHOP ALL AREA */
+
+.shopAll {
+	margin: 10% 0;
+}
+.shopBooks {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0 4%;
+}
+.shopBooks img {
+	flex: auto;
+	justify-content: space-between;
+	margin: 0 1%;
+	width: 14.6%; 
+}
+.shopBooks img:nth-child(5), .shopBooks img:nth-child(6) {
+	display: none;
+}
+@media screen and (min-width:600px) {
+	.shopBooks img:nth-child(5) {
+		display: block;
+	}
+}
+@media screen and (min-width:1000px) {
+	.shopBooks img:nth-child(6) {
+		display: block;
+	}
+}
+
+
+/* OTHER ACTIONS AREA */
+
+.actionImgs, .actionH3s {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+.actionImgs > div, .actionH3s > div {
+	flex: 23%;
+	margin: 0 5%;
+}
+.actionImgs img {
+	width: 100%;
+}

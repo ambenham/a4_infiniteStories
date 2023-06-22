@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en"> 
+	<head>
+		<meta charset="UTF-8"> 
+		<meta name="viewport" content="width-device-width, initial-scale=1.0"> 
+		<title>Contact Us | Infinite Stories</title>
+		<link rel="stylesheet" type="text/css" href ="css/styleAll.css"> 
+		<style>
+			p {
+				font-size: 18px;
+			}
+			
+			.mainContent {
+				display: flex; 
+				flex-direction: column;
+				justify-content: center;
+			}
+			.mainContent iframe {
+				flex: auto;
+				margin: 40px 5% 0 5%;
+				width: 90%;
+				height: 300px; 
+			}
+			.textDiv {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				margin: 0 5%;
+			}
+			
+			@media screen and (min-width:900px) {
+				.mainContent {
+					display: flex; 
+					flex-direction: row-reverse;
+					justify-content: center;
+				}
+				.mainContent iframe {
+					margin-top: 0px;
+					width: 500px;
+					height: 600px; 
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="navbar">
+			<a href="index.html" class="nbLogo">
+				<img 
+					src="images/InfiniteStoriesLogo.png" 
+					alt="Infinite Stories logo" 
+					width="110" 
+					height="55">
+			</a>
+			<div class="nbToggle" id="mobileMenu">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+			</div>
+			<div class="nbMenu">
+				<ul class="nbMainMenu">
+					<li class="nbItem">
+						<a href="shop.html" class="nbLink">Shop</a>
+					</li>
+					<li class="nbItem">
+						<a href="error.html" class="nbLink">Resources</a>
+					</li>
+					<li class="nbItem">
+						<a href="about.html" class="nbLink">About Us</a>
+					</li>
+					<li class="nbItem">
+						<a href="contact.html" class="nbLink">Contact Us</a>
+					</li>
+				</ul>
+				<ul class="nbSideMenu">
+					<li class="nbItem">
+						<input type="text" id="nbSearch" name="nbSearch" placeholder="Search..."> 
+					</li>
+					<li class="nbItem">
+						<a href="cart.html" class="nbLink">
+							<img src="images/cartIcon.png" alt="Cart" width="40">
+						</a>
+					</li>
+					<li class="nbItem">
+						<a href="error.html" id="nbLoginIcon" class="nbLink">
+							<img src="images/loginIcon.png" alt="Log In" width="40">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="main">
+			<h1>Contact Us</h1>
+			<div class="mainContent">
+				<div class="textDiv">
+					<p>If you have any questions or concerns, please feel free to reach out to us. You can do this through our: </p>
+					<br>
+					<p><strong>Online Support</strong></p>
+					<p>Email us at infinite.stories@help.com and we’ll be sure to respond to you within 2-3 business days.</p>
+					<p>Alternatively, you can phone us at 0800 123 123 from Monday to Friday, 8am to 5pm.</p>
+					<br>
+					<p><strong>Support Office</strong></p>
+					<p>201 Hukanui Road
+					<br>Chartwell
+					<br>Hamilton 3210
+					<br>New Zealand</p>
+				</div>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1316.8384186775843!2d175.27796848345227!3d-37.75058323304198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6d187b96ffffff%3A0x7499df56c8a53939!2s201%20Hukanui%20Road%2C%20Chartwell%2C%20Hamilton%203210%2C%20New%20Zealand!5e0!3m2!1sen!2sus!4v1681437577452!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+		</div>
+		
+		<div class="fArea">
+			<div class="fMain">
+				<div class="fLogo">
+					<a href="index.html">
+							<img 
+								src="images/InfiniteStoriesLogo.png" 
+								alt="Infinite Stories logo" 
+								width="150" 
+								height="75">
+					</a>
+				</div>
+				<ul class="fMenu">
+					<li class="fSubheader">Shop</li>
+					<li class="fItem">
+						<a href="shop.html" class="fLink">Shop All</a>
+					</li>
+					<li class="fItem">
+						<a href="error.html" class="fLink">Shop Sale</a>
+					</li>
+					<li class="fItem">
+						<a href="error.html" class="fLink">Shop New</a>
+					</li>
+				</ul>
+				<ul class="fMenu">
+					<li class="fSubheader">Information</li>
+					<li class="fItem">
+						<a href="error.html" class="fLink">Resources</a>
+					</li>
+					<li class="fItem">
+						<a href="about.html" class="fLink">About Us</a>
+					</li>
+					<li class="fItem">
+						<a href="contact.html" class="fLink">Contact Us</a>
+					</li>
+				</ul>
+			</div>
+			<small class="fCopy">Copyright &copy; 2023 Infinite Stories. All rights reserved.</small>
+		</div>
+		
+		<script src="scripts/scriptAll.js"></script>
+	</body>
+<html>

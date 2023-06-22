@@ -1,0 +1,55 @@
+.main {
+	margin: 2% 10%;
+}
+h1{
+	text-align: center; 
+	margin: 0% 0% 20px 0%;
+}
+p {
+	text-align: center; 
+}
+
+.row, .rowRev {
+	display: flex; 
+	flex-direction: column;
+	justify-items: center;
+	padding: 30px 0px;
+}
+
+.main img {
+	flex: auto;
+	margin: auto;
+	padding-top: 40px;
+	width: 50%;
+	
+}
+.textDiv {
+	display: flex;
+	flex: auto;
+	width: 100%;
+	align-items: center;
+}
+
+@media screen and (min-width:900px) {
+	.rowRev {
+		flex-direction: row-reverse;
+	}
+	.row {
+		flex-direction: row;
+	}
+	.main img {
+		height: auto;
+		margin: 0 5%;
+		padding: 0px;
+		width: 40%; /*40 = space other than margin, divided into 3*/
+	}
+	.textDiv {
+		width: 40%;
+		margin: 0 5%;
+	}
+}
+
+.mLink {
+	color: black;
+	text-decoration: underline #F6A2F6;
+}

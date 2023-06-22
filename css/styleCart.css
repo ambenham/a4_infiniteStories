@@ -1,0 +1,176 @@
+.main {
+	margin: 2% 10%;
+}
+h1 { 
+	margin: 0% 0% 20px 0%;
+}
+
+.row {
+	display: flex; 
+	align-items: center;
+	margin: 20px 0;
+}
+.colDetails {
+	display: flex; 
+	flex-wrap: wrap;
+	align-items: center;
+	width: 80%;
+}
+.colPhoto {
+	width: 30%;
+	padding-right: 30px;
+}
+.colDesc {width: 80%;}
+.colPrice {
+	width: 30%;
+	align-content: left;
+}
+.colQuantity {width: 30%;}
+.colTotal {width: 30%;}
+.colDelete {
+	width: 10%;
+	text-align: right;
+}
+.colPrice, .colQuantity, .colTotal {
+	display: flex;
+}
+.cartHead .colPhoto, .cartHead .colPrice,  .cartHead .colQuantity,  .cartHead .colTotal,  .cartHead .colDelete {
+	display: none;
+}
+.cartHead .colDesc {
+	width: 100%;
+	text-align: center;
+}
+
+@media screen and (min-width:800px) {
+	.colPhoto {width: 20%;}
+	.colDetails {width: 80%} 
+	.colDesc {width: 30%;}
+	.colPrice {width: 20%;}
+	.colQuantity {width: 20%;}
+	.colTotal {width: 20%;}
+	.colDelete{width: 10%;
+	}
+	.colPrice, .colQuantity, .colTotal {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+	}
+	.cartHead .colPhoto, .cartHead .colPrice,  .cartHead .colQuantity,  .cartHead .colTotal,  .cartHead .colDelete {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+	}
+	.cartHead .colDesc {
+		width: 30%;
+		text-align: left;
+	}
+	.row .colDesc {
+		margin-bottom: 0px;
+	}
+}
+@media screen and (min-width:1200px){
+	.colPhoto {width: 15%;}	
+	.colDetails{width: 85%;} 
+}
+.main img {
+	width: 100%;
+}
+.cartHead {
+	display: flex; 
+	padding: 10px;
+	border: 2px solid #F6A2F6;
+	border-radius: 20px;
+}
+
+.row .colDesc {
+	margin-bottom: 20px;
+}
+
+
+/* INCREMENTER */
+
+.incrementer {
+	display: flex;
+	align-items: center;
+}
+.incrementer button {
+	color: #000;
+	padding: 0px 8px;
+	background-color: #fff;
+	border: none;
+}
+.incrementer button:hover {
+	font-weight: bold;
+}
+.incrementer p {
+	color: #000;
+	padding: 0px 8px;
+	text-decoration: none;
+}
+
+
+/* DELETE BUTTON */
+
+.row .colDelete {
+	cursor: pointer;
+}
+.delBar {
+	display: block;
+	width: 20px;
+	height: 1.5px;
+	margin: 5px auto;
+	background: #000;
+}
+.delBar:nth-child(1) {
+	transform: translateY(3.5px) rotate(45deg);
+}
+.delBar:nth-child(2) {
+	transform: translateY(-3px) rotate(-45deg);
+}
+
+
+/* TOTALS SECTION */
+
+.totals {
+	display: grid;
+	width: 100%;
+	margin: 40px 0;
+}
+.totals p {
+	text-align: right;
+	padding-bottom: 5px;
+}
+
+.colNums {width: 25%}
+.colLabel {width: 75%}
+
+@media screen and (min-width:800px) {
+	.colNums {width: 15%}
+	.colLabel {width: 85%}	
+}
+
+#totalLabel, #totalCost {
+	font-size: 20px;
+}
+.totals a {
+	text-decoration: none;
+	justify-self: end;
+}
+.totals button {
+	border: 0px;
+	border-radius: 7px;
+	background-color: #107E7E;
+	color: #fff;
+	padding: 3px;
+	margin-top: 4px;
+	width: 200px;
+	cursor: pointer;
+}
+.totals button:active {
+	background-color: #0C5A5A;
+}
+.totals button:hover {
+	box-shadow: 2px 2px 2px #E4E411;
+	transition: all 0.3s ease;
+}

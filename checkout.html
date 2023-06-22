@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en"> 
+	<head>
+		<meta charset="UTF-8"> 
+		<meta name="viewport" content="width-device-width, initial-scale=1.0"> 
+		<title>Checkout | Infinite Stories</title>
+		<link rel="stylesheet" type="text/css" href ="css/styleAll.css"> 
+		<link rel="stylesheet" type="text/css" href ="css/styleCheckout.css"> 
+	</head>
+	<body>
+		<div class="navbar">
+			<a href="index.html" class="nbLogo">
+				<img 
+					src="images/InfiniteStoriesLogo.png" 
+					alt="Infinite Stories logo" 
+					width="110" 
+					height="55">
+			</a>
+			<div class="nbToggle" id="mobileMenu">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+			</div>
+			<div class="nbMenu">
+				<ul class="nbMainMenu">
+					<li class="nbItem">
+						<a href="shop.html" class="nbLink">Shop</a>
+					</li>
+					<li class="nbItem">
+						<a href="error.html" class="nbLink">Resources</a>
+					</li>
+					<li class="nbItem">
+						<a href="about.html" class="nbLink">About Us</a>
+					</li>
+					<li class="nbItem">
+						<a href="contact.html" class="nbLink">Contact Us</a>
+					</li>
+				</ul>
+				<ul class="nbSideMenu">
+					<li class="nbItem">
+						<input type="text" id="nbSearch" name="nbSearch" placeholder="Search..."> 
+					</li>
+					<li class="nbItem">
+						<a href="cart.html" class="nbLink">
+							<img src="images/cartIcon.png" alt="Cart" width="40">
+						</a>
+					</li>
+					<li class="nbItem">
+						<a href="error.html" id="nbLoginIcon" class="nbLink">
+							<img src="images/loginIcon.png" alt="Log In" width="40">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="main">
+			<h1>Checkout</h1>
+			<div class="mainContent">
+				<div class="row">
+					<div class="col30" id="cart">
+						<h2>Cart Summary</h2>
+						<div class="cartRow">
+							<div class="colPhoto">
+								<img src="images/books/Invincible.png" alt="Invisible Invincible by Alliana Jeri">
+							</div>
+							<div class="colDetails">
+								<p><del>Invisible</del> Invincible</p>
+								<small>Alliana Jeri</small>
+								<p>&dollar;15.00</p>
+							</div>
+						</div>
+						<div class="cartRow">
+							<div class="colPhoto">
+								<img src="images/books/LetHerGo.png" alt="Let Her Go by Ettie Dimova">
+							</div>
+							<div class="colDetails">
+								<p>Let Her Go</p>
+								<small>Ettie Dimova</small>
+								<p>&dollar;17.50</p>
+							</div>
+						</div>
+						<div class="total">
+							<h4>TOTAL:</h4>
+							<h4>&dollar;32.50</h4>
+						</div>
+					</div>
+					<div class="col70">
+						<form onsubmit="return validateForm()" onreset="return resetForm()"> 
+							<h2>Billing Address</h2>
+							<div class="row">	
+								<div class="col50">
+									<label for="name">Full Name</label>
+									<input type="text" id="name" class="formInput">
+									<label for="email">Email Address</label>
+									<input type="email" id="email" class="formInput">
+								</div>
+								<div class="col50">
+									<label for="address">Street Address</label>
+									<input type="text" id="address" class="formInput">
+									<label for="city">City</label>
+									<input type="text" id="city" class="formInput">
+									<label for="postCode">Post Code</label>
+									<input type="number" id="postCode" min="0100" max="9999" class="formInput">
+								</div>
+							</div>
+							<h2>Payment Information</h2>
+							<div class="row">
+								<div class="col50">
+									<label for="cardName">Name on Card</label>
+									<input type="text" id="cardName" class="formInput">
+								</div>
+								<div class="col50">
+									<label for="cardNum">Card Number</label>
+									<input type="number" id="cardNum" class="formInput">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col25">
+									<label for="cardMonth">Card Expiry Month</label>
+									<input type="number" id="cardMonth" min="1" max="12" class="formInput">
+								</div>
+								<div class="col25">
+									<label for="cardYear">Card Expiry Year</label>
+									<input type="number" id="cardYear" min="2022" max="2033" class="formInput">
+								</div>
+								<div class="col50">
+									<label for="cvv">CVV</label>
+									<input type="number" id="cvv" min="000" max="999" class="formInput">
+								</div>
+							</div>
+							<p id="msg"></p>
+							<div class="buttons">
+								<button type="reset">Reset</button>
+								<button type="submit">Submit</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="fArea">
+			<div class="fMain">
+				<div class="fLogo">
+					<a href="index.html">
+							<img 
+								src="images/InfiniteStoriesLogo.png" 
+								alt="Infinite Stories logo" 
+								width="150" 
+								height="75">
+					</a>
+				</div>
+				<ul class="fMenu">
+					<li class="fSubheader">Shop</li>
+					<li class="fItem">
+						<a href="shop.html" class="fLink">Shop All</a>
+					</li>
+					<li class="fItem">
+						<a href="error.html" class="fLink">Shop Sale</a>
+					</li>
+					<li class="fItem">
+						<a href="error.html" class="fLink">Shop New</a>
+					</li>
+				</ul>
+				<ul class="fMenu">
+					<li class="fSubheader">Information</li>
+					<li class="fItem">
+						<a href="error.html" class="fLink">Resources</a>
+					</li>
+					<li class="fItem">
+						<a href="about.html" class="fLink">About Us</a>
+					</li>
+					<li class="fItem">
+						<a href="contact.html" class="fLink">Contact Us</a>
+					</li>
+				</ul>
+			</div>
+			<small class="fCopy">Copyright &copy; 2023 Infinite Stories. All rights reserved.</small>
+		</div>
+		
+		<script src="scripts/scriptAll.js"></script>
+	</body>
+<html>

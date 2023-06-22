@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en"> 
+	<head>
+		<meta charset="UTF-8"> 
+		<meta name="viewport" content="width-device-width, initial-scale=1.0"> 
+		<title>Shop | Infinite Stories</title>
+		<link rel="stylesheet" type="text/css" href ="css/styleAll.css"> 
+		<link rel="stylesheet" type="text/css" href ="css/styleShop.css">
+	</head>
+	<body>
+		<div class="navbar">
+			<a href="index.html" class="nbLogo">
+				<img 
+					src="images/InfiniteStoriesLogo.png" 
+					alt="Infinite Stories logo" 
+					width="110" 
+					height="55">
+			</a>
+			<div class="nbToggle" id="mobileMenu">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+			</div>
+			<div class="nbMenu">
+				<ul class="nbMainMenu">
+					<li class="nbItem">
+						<a href="shop.html" class="nbLink">Shop</a>
+					</li>
+					<li class="nbItem">
+						<a href="error.html" class="nbLink">Resources</a>
+					</li>
+					<li class="nbItem">
+						<a href="about.html" class="nbLink">About Us</a>
+					</li>
+					<li class="nbItem">
+						<a href="contact.html" class="nbLink">Contact Us</a>
+					</li>
+				</ul>
+				<ul class="nbSideMenu">
+					<li class="nbItem">
+						<input type="text" id="nbSearch" name="nbSearch" placeholder="Search..."> 
+					</li>
+					<li class="nbItem">
+						<a href="cart.html" class="nbLink">
+							<img src="images/cartIcon.png" alt="Cart" width="40">
+						</a>
+					</li>
+					<li class="nbItem">
+						<a href="error.html" id="nbLoginIcon" class="nbLink">
+							<img src="images/loginIcon.png" alt="Log In" width="40">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="main">
+			<h1>Shop</h1>
+			<div class="mainShopContent">
+				<div class="filterArea">
+					<h2>Filters</h2>
+					<div>
+						<select class="selectFilter">
+							<option disabled selected hidden>Fictional Genres</option> <!--like a placeholder-->
+							<option>Any Genre</option>
+							<option>Action and Adventure</option>
+							<option>Romance</option>
+							<option>Coming of Age</option>
+							<option>Science Fiction</option>
+							<option>Fantasy</option>
+							<option>Mystery</option>
+							<option>Thriller</option>
+							<option>Horror</option>
+							<option>Historical</option>
+							<option>Humour</option>
+							<option>Dystopian</option>
+							<option>Western</option>
+						</select>
+						<select class="selectFilter">
+							<option disabled selected hidden>Representation</option>
+							<option>Any Representation</option>
+							<option>Women</option>
+							<option>People of Colour</option>
+							<option>LGBTQIA+ People</option>
+							<option>Disabled People</option>
+							<option>Refugees</option>
+							<option>Plus Size People</option>
+						</select>
+						<select class="selectFilter">
+							<option disabled selected hidden>Format</option>
+							<option>Any Format</option>
+							<option>Paperback</option>
+							<option>Hardback</option>
+							<option>Graphic Novel</option>
+							<option>Ebook</option>
+							<option>Audiobook</option>
+							<option>Braille Book</option>
+							<option>Dyslexia Friendly Book</option>
+						</select>
+						<select class="selectFilter">
+							<option disabled selected hidden>Maturity</option>
+							<option>All Ages</option>
+							<option>Children</option>
+							<option>Young Adult</option>
+							<option>Adult</option>
+						</select>
+						<select class="selectFilter">
+							<option disabled selected hidden>Price range</option>
+							<option>Any Price</option>
+							<option>$0-$10</option>
+							<option>$10-$20</option>
+							<option>$20-$30</option>
+							<option>$30+</option>
+						</select>
+						<select class="selectFilter">
+							<option disabled selected hidden>Sale</option>
+							<option>Any or not on sale</option>
+							<option>Lesbian Visibility Day - 30% off</option>
+							<option>AAPI Heritage Month - 10% off</option>
+							<option>International Day Against LGBTQIA+ Discrimination - 20% off</option>
+						</select>
+					</div>
+				</div>
+				<div class="shopArea">
+					<div class="shopSubheader">
+						<button type="button" id="filButton" onclick="return showFilters()">Filters</button>
+						<select id="sortBy">
+							<option disabled selected hidden>Sort by...</option> <!--like a placeholder-->
+							<option>Most Popular</option>
+							<option>Newest Added</option>
+							<option>Lowest Price</option>
+							<option>Highest Price</option>
+							<option>Book Title A-Z</option>
+							<option>Book Title Z-A</option>
+						</select>
+						<small>8 items</small>
+						<div class="pagination">
+							<a href="#">&laquo;</a>
+							<a href="#">1</a>
+							<a href="#">&raquo;</a>
+						</div>
+					</div>
+					<div class="shopBooks">
+						<div class="shopItem">
+							<a href="#">
+								<img src="images/books/MyBodyMyChoice.png" alt="My Body My Choice by Gabriza Holtz">
+								<p>My Body My Choice</p>
+							</a>
+								<small>Gabriza Holtz</small>
+								<small>$25.00</small>
+								<button type="button">Add to cart</button>
+						</div>
+						<div class="shopItem">
+							<a href="#">
+								<img src="images/books/StillNotEnough.png" alt="Still Not Enough by Zalia Teel">
+								<p>Still Not Enough</p>
+							</a>
+							<small>Zalia Teel</small>
+							<small>$30.00</small>
+							<button type="button">Add to cart</button>
+						</div>
+						<div class="shopItem">
+							<a href="#">
+								<img src="images/books/LetHerGo.png" alt="Let Her Go by Ettie Dimova">
+								<p>Let Her Go</p>
+							</a>
+							<small>Ettie Dimova</small>
+							<small>$17.50</small>
+							<button type="button">Add to cart</button>
+						</div>
+						<div class="shopItem">
+							<a href="#">
+								<img src="images/books/Ataraxia.png" alt="Ataraxia by Jīn Hua">
+								<p>Ataraxia</p>
+							</a>
+							<small>Jīn Hua</small>
+							<small>$22.00</small>
+							<button type="button">Add to cart</button>
+						</div>
+						<div class="shopItem">
+							<a href="#">
+								<img src="images/books/LetHimBeFemme.png" alt="Let Him Be Femme by Jaxon Asbury">
+								<p>Let Him Be Femme</p>
+							</a>
+							<small>Jaxon Asbury</small>
+							<small>$32.00</small>
+							<button type="button">Add to cart</button>
+						</div>
+						<div class="shopItem">
+							<a href="#">
+								<img src="images/books/NotABadWord.png" alt="Not A Bad Word by Zylo Nesbitt">
+								<p>Not A Bad Word</p>
+							</a>
+							<small>Zylo Nesbitt</small>
+							<small>$26.40</small>
+							<button type="button">Add to cart</button>
+						</div>
+						<div class="shopItem">
+							<a href="#">
+								<img src="images/books/GoingGoingGone.png" alt="Going Going Gone by Araceli Escarra">
+								<p>Going Going Gone</p>
+							</a>
+							<small>Araceli Escarra</small>
+							<small>$27.00</small>
+							<button type="button">Add to cart</button>
+						</div>
+						<div class="shopItem">
+							<a href="#">
+								<img src="images/books/SmellTheDaisies.png" alt="Smell The Daisies by Ekzell Ralston">
+								<p>Smell The Daisies</p>
+							</a>
+							<small>Ekzell Ralston</small>
+							<small>$24.00</small>
+							<button type="button">Add to cart</button>
+						</div>
+					</div>
+					<small>End of results</small>
+				</div>
+			</div>
+		</div>
+		
+		<div class="fArea">
+			<div class="fMain">
+				<div class="fLogo">
+					<a href="index.html">
+							<img 
+								src="images/InfiniteStoriesLogo.png" 
+								alt="Infinite Stories logo" 
+								width="150" 
+								height="75">
+					</a>
+				</div>
+				<ul class="fMenu">
+					<li class="fSubheader">Shop</li>
+					<li class="fItem">
+						<a href="shop.html" class="fLink">Shop All</a>
+					</li>
+					<li class="fItem">
+						<a href="error.html" class="fLink">Shop Sale</a>
+					</li>
+					<li class="fItem">
+						<a href="error.html" class="fLink">Shop New</a>
+					</li>
+				</ul>
+				<ul class="fMenu">
+					<li class="fSubheader">Information</li>
+					<li class="fItem">
+						<a href="error.html" class="fLink">Resources</a>
+					</li>
+					<li class="fItem">
+						<a href="about.html" class="fLink">About Us</a>
+					</li>
+					<li class="fItem">
+						<a href="contact.html" class="fLink">Contact Us</a>
+					</li>
+				</ul>
+			</div>
+			<small class="fCopy">Copyright &copy; 2023 Infinite Stories. All rights reserved.</small>
+		</div>
+		<script src="scripts/scriptAll.js"></script>
+	</body>
+<html>

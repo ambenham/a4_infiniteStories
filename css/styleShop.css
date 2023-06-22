@@ -1,0 +1,161 @@
+.mainShopContent {
+	display: flex;
+	justify-content: center;
+	margin: 0% 3%;
+}
+hr {
+	border: 1px solid #E4E411;
+}
+p {
+	font-size: 16px;
+}
+
+/* FILTER AREA */
+.filterArea {
+	flex: 20%;
+	justify-content: space-between;
+	margin: 0 2%;
+}
+.filterArea > h2 {
+	padding-bottom: 10px;
+}
+.selectFilter {
+	border: none;
+	border-bottom: 2px solid #E4E411;
+	font-size: 16px;
+	padding: 10px 0px;
+	width: 100%;
+	cursor: pointer;
+}
+
+
+/* SHOP AREA */
+.shopArea {
+	flex: 80%;
+	justify-content: space-between;
+	margin: 0 2%;
+}
+.shopArea > small {
+	text-align: center;
+	display: block;
+	color: #888;
+	padding: 40px;
+}
+.shopSubheader {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-right: 2%;
+}
+#filButton {
+	display: none;
+}
+#sortBy {
+	display: flex;
+	min-width: 150px;
+	border: 2px solid #888;
+	border-radius: 10px;
+	padding: 3px 10px;
+	cursor: pointer;
+}
+
+.pagination {
+	display: inline-block;
+}
+.pagination a {
+	font-size: smaller;
+	color: #888;
+	padding: 0px 8px;
+	text-decoration: none;
+}
+.shopBooks {
+	display: flex;
+	flex-wrap: wrap;
+}
+.shopItem {
+	display: flex;
+	flex-direction: column;
+	width: 23%;
+	margin: 20px 2% 0px 0px;
+}
+.shopItem img {
+	width: 100%;
+}
+.shopItem a {
+	color: #000;
+	text-decoration: none;
+}
+@media screen and (max-width:1200px) {
+	.mainShopContent{
+		flex-direction: column;
+	}
+	h1, .shopSubheader {
+		position: relative;
+	}
+	.filterArea > h2, .shopSubheader small, .pagination {
+		display: none;
+	}
+	#filButton {
+		display: flex;
+		min-width: 150px;
+		border: 2px solid #F6A2F6;
+		border-radius: 10px;
+		padding: 3px 10px;
+		background-color: #fff;
+		transition: all 0.5s ease;
+		cursor: pointer;
+	}
+	#filButton.active {
+		border: 0px;
+		background-color: #F6A2F6;
+		transition: all 0.5s ease;
+	}
+	#filButton:hover {
+		box-shadow: 2px 2px 2px #E4E411;
+		transition: all 0.3s ease;
+	}
+	.filterArea {
+		position: absolute;
+		top: 200px;
+		left: 0px;
+		width: 100vw;
+		padding: 0px 15% 40px 8%;
+		opacity: 0;
+		transition: all 0.5s ease;
+		z-index: -1;
+	}
+	.filterArea.active {
+		opacity: 1;
+		transition: all 0.5s ease;
+		z-index: 100;
+		background-color: #fff;
+	}
+}
+@media screen and (max-width:900px) {
+	.shopItem {
+		width: 31.3%;
+	}
+}
+@media screen and (max-width:600px) {
+	.shopItem {
+		width: 48%;
+	}
+}
+.shopItem img, .shopItem p, .shopItem small {
+	margin-bottom: 4px;
+}
+.shopItem button {
+	border: 0px;
+	border-radius: 7px;
+	background-color: #107E7E;
+	color: #fff;
+	padding: 3px;
+	margin-top: 4px;
+}
+.shopItem button:active {
+	background-color: #0C5A5A;
+}
+.shopItem button:hover {
+	box-shadow: 2px 2px 2px #E4E411;
+	transition: all 0.3s ease;
+}

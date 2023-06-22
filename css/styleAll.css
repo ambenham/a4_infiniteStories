@@ -1,0 +1,193 @@
+ @import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+* {
+ 	font-family: 'Jost', sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh; /* the minimum height of the body is 100% of the viewport */
+}
+/*adding a yellow shadow to text links when hovered over*/
+.nbLink:hover, .mLink:hover, .fLink:hover {
+	text-shadow: 2px 2px 2px #E4E411;
+	transition: all 0.3s ease; /* making the shadow fade in */
+}
+
+
+/* NAVIGATION BAR */
+
+.navbar {
+	display: flex;
+	position: sticky; 
+	top: 0; 
+	align-items: center;
+	padding: 10px;
+	z-index: 999; /* topmost layer */
+	background-color: #fff;
+}
+.nbMenu {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+.nbMainMenu, .nbSideMenu {
+	display: flex;
+	list-style: none;
+	align-items: center;
+}
+.nbItem {
+	padding-left: 30px;
+}
+.nbLink {
+	color: #000;
+	text-decoration: none;
+	font-size: 18px;
+}
+.nbLogo {
+	padding: 0px 20px;
+}
+
+
+#nbSearch {
+	display: flex;
+	border: 2px solid #107E7E;
+	border-radius: 20px;
+	padding: 3px 3px 3px 10px;
+	font-size: 16px;
+}
+#nbLoginIcon {
+	padding-right: 20px;
+}
+
+@media screen and (max-width:1000px) {
+	.nbMenu {
+		flex-direction: column-reverse;
+		position: absolute;
+		top: -1000px;
+		opacity: 0;
+		transition: all 0.5s ease;
+		z-index: -1; /*behind the other layers*/
+	}
+	.nbMenu.active {
+		top: 100%;
+		opacity: 1;
+		transition: all 0.5s ease;
+		z-index: 999;
+		background-color: #fff;
+	}
+	.nbMainMenu {
+		display: block;
+	}
+	.nbSideMenu {
+		justify-content: flex-end;
+		padding-right: 50px;
+	}
+	.nbMainMenu, .nbSideMenu {
+		width: 100vw;
+	}
+	.nbToggle {
+		cursor: pointer;
+	}
+	.nbToggle .bar {
+		display: block;
+		width: 25px;
+		height: 3px;
+		margin: 5px auto;
+		transition: all 0.3s ease-in-out;
+		background: #000;
+	}
+	.nbMainMenu .nbItem {
+		width: 100%;
+	}
+	.nbMainMenu .nbLink {
+		padding: 0.5rem 0;
+		width: 100%;
+		display: table;
+	}
+	.nbSideMenu .nbItem:nth-child(1), #nbSearch {
+		width: 100%;
+	}
+	#mobileMenu {
+		position: absolute;
+		top: 20%;
+		right: 5%;
+		transform: translate (5%,20%)
+	}
+}
+#mobileMenu.is-active .bar:nth-child(2) {
+	opacity: 0;
+}
+#mobileMenu.is-active .bar:nth-child(1) {
+	transform: translateY(8px) rotate(45deg); /*translate for alignment*/
+}
+#mobileMenu.is-active .bar:nth-child(3) {
+	transform: translateY(-8px) rotate(-45deg);
+}
+	
+
+/* MAIN CONTENT */
+.main {
+	flex: 1; /* will grow/shrink depending on the screen size & flex items around it */
+	margin: 2% 5%; /* horizontal margin is halved - some pages require space between columns */
+}
+h1, h2, h3, h4 {
+	font-weight: normal;
+}
+h1 { 
+	color:#107E7E;
+	margin: 0% 5% 20px 5%;
+}
+h3 {
+	text-align: center; 
+	color: #000;
+}
+h4 {
+	font-size: 18px;
+}
+.mLink {
+	text-decoration: none;
+}
+
+/* FOOTER */
+
+.fMain {
+	display: flex;
+	flex-direction: column;
+	margin-top: 50px;
+	align-items: center;
+	justify-content: space-evenly;
+	text-align: center;
+}
+.fMenu {
+	padding: 20px 0px;
+	list-style-type: none;
+}
+.fSubheader {
+	font-weight: bold;
+	padding-bottom: 15px;
+}
+.fItem {
+	padding-bottom: 10px;
+}
+.fLink {
+	color: #000;
+	text-decoration: none;
+	font-size: 14px;
+}
+.fCopy {
+	display: block; /* display like a block element so text-align works*/
+	color: #888;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+@media screen and (min-width:800px){
+	.fMain {
+		flex-direction: row;
+		text-align: left;
+		margin-top: 0px;
+	}
+}

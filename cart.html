@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en"> 
+	<head>
+		<meta charset="UTF-8"> 
+		<meta name="viewport" content="width-device-width, initial-scale=1.0"> 
+		<title>Cart | Infinite Stories</title>
+		<link rel="stylesheet" type="text/css" href ="css/styleAll.css"> 
+		<link rel="stylesheet" type="text/css" href ="css/styleCart.css"> 
+	</head>
+	<body>
+		<div class="navbar">
+			<a href="index.html" class="nbLogo">
+				<img 
+					src="images/InfiniteStoriesLogo.png" 
+					alt="Infinite Stories logo" 
+					width="110" 
+					height="55">
+			</a>
+			<div class="nbToggle" id="mobileMenu">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+			</div>
+			<div class="nbMenu">
+				<ul class="nbMainMenu">
+					<li class="nbItem">
+						<a href="shop.html" class="nbLink">Shop</a>
+					</li>
+					<li class="nbItem">
+						<a href="error.html" class="nbLink">Resources</a>
+					</li>
+					<li class="nbItem">
+						<a href="about.html" class="nbLink">About Us</a>
+					</li>
+					<li class="nbItem">
+						<a href="contact.html" class="nbLink">Contact Us</a>
+					</li>
+				</ul>
+				<ul class="nbSideMenu">
+					<li class="nbItem">
+						<input type="text" id="nbSearch" name="nbSearch" placeholder="Search..."> 
+					</li>
+					<li class="nbItem">
+						<a href="cart.html" class="nbLink">
+							<img src="images/cartIcon.png" alt="Cart" width="40">
+						</a>
+					</li>
+					<li class="nbItem">
+						<a href="error.html" id="nbLoginIcon" class="nbLink">
+							<img src="images/loginIcon.png" alt="Log In" width="40">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="main">
+			<h1>Cart</h1>
+			<div class="cartHead">
+				<div class="colPhoto">
+				</div>
+				<div class="colDesc">
+					<h4>Items</h4>
+				</div>
+				<div class="colPrice">
+					<h4>Price</h5>
+				</div>
+				<div class="colQuantity">
+					<h4>Quantity</h5>
+				</div>
+				<div class="colTotal">
+					<h4>Total Price</h4>
+				</div>
+				<div class="colDelete"></div>
+			</div>
+			<div class="row">
+				<div class="colPhoto">
+					<img src="images/books/Invincible.png" alt="Invisible Invincible by Alliana Jeri">
+				</div>
+				<div class="colDetails">
+					<div class="colDesc">
+						<p><del>Invisible</del> Invincible</p>
+						<small>Alliana Jeri<br>Audiobook, French</small>
+					</div>
+					<div class="colPrice">
+						<p>&dollar;</p>
+						<p id="price1">15.00</p>
+					</div>
+					<div class="colQuantity incrementer">
+						<button type="button" onclick="decrement1()">&#8210;</button>
+						<p id="counter1"></p>
+						<button type="button" onclick="increment1()">&plus;</button>
+					</div>
+					<div class="colTotal">
+						<p>&dollar;</p>
+						<p id="item1"></p>
+					</div>
+					<div class="colDelete">
+						<span class="delBar"></span>
+						<span class="delBar"></span>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="colPhoto">
+					<img src="images/books/LetHerGo.png" alt="Let Her Go by Ettie Dimova">
+				</div>
+				<div class="colDetails">
+					<div class="colDesc">
+						<p>Let Her Go</p>
+						<small>Ettie Dimova<br>Paperback, English</small>
+					</div>
+					<div class="colPrice">
+						<p>&dollar;</p>
+						<p id="price2">17.50</p>
+					</div>
+					<div class="colQuantity incrementer">
+						<button type="button" onclick="decrement2()">&#8210;</button>
+						<p id="counter2"></p>
+						<button type="button" onclick="increment2()">&plus;</button>
+					</div>
+					<div class="colTotal">
+						<p>&dollar;</p>
+						<p id="item2"></p>
+					</div>
+					<div class="colDelete">
+						<span class="delBar"></span>
+						<span class="delBar"></span>
+					</div>
+				</div>
+			</div>
+			<div class="totals">
+				<div class="row">
+					<p class="colLabel">Subtotal:</p>
+					<p class="colNums" id="subtotal"></p>
+				</div>
+				<div class="row">
+					<p class="colLabel">GST:</p>
+					<p class="colNums" id="gst">&dollar;</p>
+				</div>
+				<div class="row">
+					<p class="colLabel" id="totalLabel">TOTAL COST:</p>
+					<p class="colNums" id="totalCost">&dollar;</p>
+				</div>
+				<a href="checkout.html"><button type="button">Continue</button></a>
+			</div>
+		</div>
+		
+		<div class="fArea">
+			<div class="fMain">
+				<div class="fLogo">
+					<a href="index.html">
+							<img 
+								src="images/InfiniteStoriesLogo.png" 
+								alt="Infinite Stories logo" 
+								width="150" 
+								height="75">
+					</a>
+				</div>
+				<ul class="fMenu">
+					<li class="fSubheader">Shop</li>
+					<li class="fItem">
+						<a href="shop.html" class="fLink">Shop All</a>
+					</li>
+					<li class="fItem">
+						<a href="error.html" class="fLink">Shop Sale</a>
+					</li>
+					<li class="fItem">
+						<a href="error.html" class="fLink">Shop New</a>
+					</li>
+				</ul>
+				<ul class="fMenu">
+					<li class="fSubheader">Information</li>
+					<li class="fItem">
+						<a href="error.html" class="fLink">Resources</a>
+					</li>
+					<li class="fItem">
+						<a href="about.html" class="fLink">About Us</a>
+					</li>
+					<li class="fItem">
+						<a href="contact.html" class="fLink">Contact Us</a>
+					</li>
+				</ul>
+			</div>
+			<small class="fCopy">Copyright &copy; 2023 Infinite Stories. All rights reserved.</small>
+		</div>
+		
+		<script src="scripts/scriptAll.js"></script>
+		<script>
+			var num1 = 1;
+			var num2 = 1;
+			document.getElementById('counter1').innerHTML = num1;
+			document.getElementById('counter2').innerHTML = num2;
+			updateItemTotal();
+			calculateTotals();
+		</script>
+	</body>
+<html>
