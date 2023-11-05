@@ -7,3 +7,6 @@ Infinite Stories is a mock inclusive bookstore committed to uplifting minorities
 
 ### About the project
 This repository contains the majority of the Infinite Stories website, those being the Home, Shop, Cart, About Us, Contact Us and Error pages. It was created with HTML, CSS, and JavaScript.
+
+![infiniteStories](https://github.com/ambenham/infiniteStoriesWebsite/assets/133724440/b4776c1c-0323-4e77-b057-9651918bdb9c) ![image](https://github.com/ambenham/infiniteStoriesWebsite/assets/133724440/b5cab260-e82b-4293-94cb-2ff7f0f2be7d)
+
